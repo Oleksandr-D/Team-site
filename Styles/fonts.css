@@ -1,0 +1,21 @@
+@font-face {
+    font-family:'Gentium Book Basic';
+    src:url(Fonts/Gentium_Book_Basic/GentiumBookBasic-Regular.ttf);
+    
+}
+@font-face{
+    font-family: 'Vollkorn';
+    src:url('./Fonts/Vollkorn/Vollkorn-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family:'Alegreya' ;
+    src: url('./Fonts/Alegreya/Alegreya-Italic-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'bahij-sultannahia';
+    src: url('./Fonts/bahij-sultannahia.ttf');
+}
+@font-face {
+    font-family:'ChronicaPro' ;
+    src: url('./Fonts/ChronicaPro-Regular.ttf');
+}
