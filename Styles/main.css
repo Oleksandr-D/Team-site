@@ -1,0 +1,176 @@
+main {
+   display: flex;
+   justify-content: center;
+}
+
+.content-wraper {
+   width: 97%;
+   background-color: #dfdfdf;
+   border-radius: 20px;
+   padding: 0px 20px;
+   display: flex;
+   align-items: center;
+}
+
+.container {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   padding: 20px 0px;
+}
+
+.top-wraper,
+.bottom-wraper {
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   margin: 10px 0px;
+}
+
+.project-name {
+   width: 592px;
+   height: 130px;
+   display: flex;
+   align-self: flex-start;
+}
+
+.comany {
+   width: 592px;
+   height: 130px;
+   align-self: flex-start;
+}
+
+.disc-team-block {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.inner-block {
+   width: 732px;
+   height: 194px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.project-name>p:last-child,
+.comany>p:last-child,
+.inner-block p:first-child,
+.inner-block>div+p,
+.data-por h5 {
+   font-weight: bold;
+}
+
+.inner-block img {
+   width: 120px;
+   height: 138px;
+}
+
+.team {
+   width: 80%;
+   margin-left: 20px;
+}
+
+.data-por {
+   width: 447px;
+   height: 410px;
+}
+
+.data-por img {
+   width: 120px;
+   height: 115px;
+   margin-bottom: 20px;
+}
+
+.project-name,
+.comany,
+.inner-block,
+.data-por {
+   background-color: #ffffff;
+   border-radius: 20px;
+   font-family: 'ChronicaPro';
+   flex-direction: column;
+   padding: 20px 25px;
+}
+
+/* -----------------------------------------aside-------------------------------------- */
+
+.side-menu {
+   width: 105px;
+   height: 420px;
+   background-color: #ffffff;
+   border-radius: 20px;
+   font-family: 'ChronicaPro';
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   position: relative;
+}
+
+.smollmenu {
+   width: 40px;
+   height: 40px;
+   color: black;
+   transition-duration: 0.5s;
+}
+
+.smollmenu:hover {
+   transform: scale(1.05);
+   cursor: pointer;
+}
+
+.project::before,
+.account::after,
+.groups::after,
+.cloud::after,
+.setting::after {
+   content: "";
+   font-family: 'Vollkorn';
+   color: rgb(255, 255, 255);
+   cursor: pointer;
+   width: 0px;
+   line-height: 40px;
+   border-radius: 20px;
+   position: absolute;
+   top: 0px;
+   left: -7px;
+   overflow: hidden;
+   z-index: -2;
+   transition-duration: 0.7s;
+   text-align: end;
+   padding-right: 20px;
+   transition-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.project:hover::before {
+   content: "Project";
+   background-color: rgb(112, 169, 255);
+   width: 150px;
+}
+
+.account:hover::after {
+   content: "Account";
+   background-color: rgb(112, 169, 255);
+   width: 150px;
+}
+
+.groups:hover::after {
+   content: "Groups";
+   background-color: rgb(112, 169, 255);
+   width: 150px;
+}
+
+.cloud:hover::after {
+   content: "Cloud";
+   background-color: rgb(112, 169, 255);
+   width: 150px;
+}
+
+.setting:hover::after {
+   content: "Setting";
+   background-color: rgb(112, 169, 255);
+   width: 150px;
+}

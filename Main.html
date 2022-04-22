@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
-    <link rel="stylesheet" href="Styles/allCss.css">
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/main.css">
 </head>
 
 <body>
@@ -18,50 +19,76 @@
         </nav>
     </header>
     <main>
-        <aside class="side-menu">
-            <div class="project smollmenu">
-                <img class="smollmenu" src='./Images/folder.svg'>
-            </div>
-            <div class="account smollmenu">
-                <a href="Account.html"><img src='./Images/monitor.svg'></a>
-            </div>
-            <div class="groups smollmenu">
-                <img class="smollmenu" src='./Images/users-alt.svg'>
-            </div>
-            <div class="cloud smollmenu">
-                <img class="smollmenu" src='./Images/cloud-share.svg'>
-            </div>
-            <div class="setting smollmenu">
-                <img class="smollmenu" src='./Images/cog.svg'>
-            </div>
-        </aside>
-        <section class="pageMain">
+        <div class="content-wraper">
+            <aside class="side-menu">
+                <div class="project smollmenu">
+                    <img class="smollmenu" src='./Images/folder.svg'>
+                </div>
+                <a href="Account.html">
+                    <div class="account smollmenu">
+                        <img src='./Images/monitor.svg'>
+                    </div>
+                </a>
+                <div class="groups smollmenu">
+                    <img class="smollmenu" src='./Images/users-alt.svg'>
+                </div>
 
-            <div class="projectName">Project Name<br> HTML&CSS</div>
-            <div class="comany">Company/Organization<br> Logos Academy</div>
-            <div class="description">Description<br>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Excepturi numquam incidunt consequuntur quisquam animi obcaecati ipsa accusantium omnis
-                adipisci! Voluptatibus harum natus sapiente sunt consectetur qui praesentium aliquam rerum adipisci.
-            </div>
-            <div class="team">
-                <img class="imTeam" src='./Images/team.jpg'>Team<br>Excepturi numquam incidunt consequuntur quisquam
-                animi <br>obcaecati
-                ipsa accusantium omnisadipisci! Voluptatibus
-            </div>
-
-            <div class="dataPor">
-                <img class="imDataPor" src='./Images/data.jpg'>Data portability<br>Excepturi numquam incidunt
-                consequuntur quisquam animi
-                obcaecati ipsa accusantium omnis xcepturi numquam incidunt consequuntur quisquam animi obcaecati
-                ipsa
-                accusantium omnis
-                adipisci! Voluptatibus harum natus sapiente sunt consectetur qui praesentium aliquam reru
-                adipisci! Voluptatibus</div>
-        </section>
-
-
-
+                <div class="cloud smollmenu">
+                    <img class="smollmenu" src='./Images/cloud-share.svg'>
+                </div>
+                <div class="setting smollmenu">
+                    <img class="smollmenu" src='./Images/cog.svg'>
+                </div>
+            </aside>
+            <section class="container">
+                <article class="top-wraper">
+                    <div class="project-name">
+                        <p>Project Name</p>
+                        <p>HTML&CSS</p>
+                    </div>
+                    <div class="comany">
+                        <p>Company/Organization</p>
+                        <p>Logos Academy</p>
+                    </div>
+                </article>
+                <article class="bottom-wraper">
+                    <div class="disc-team-block">
+                        <div class="inner-block">
+                            <p>Description</p><br>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Excepturi numquam incidunt consequuntur quisquam animi obcaecati ipsa accusantium omnis
+                                adipisci! Voluptatibus harum natus sapiente sunt consectetur qui praesentium aliquam
+                                rerum
+                                adipisci.
+                            </p>
+                        </div>
+                        <div class="inner-block">
+                            <div>
+                                <img src='./Images/team.jpg'>
+                            </div>
+                            <div class="team">
+                                <p>Team</p><br>
+                                <span>Excepturi numquam incidunt consequu quisquam animi obcaecati
+                                    ipsa accusantium omnisadipisci! Voluptatibus
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="data-por">
+                        <img src='./Images/data.jpg'>
+                        <h5>Data portability</h5><br>
+                        <p>Excepturi numquam incidunt
+                            consequuntur quisquam animi
+                            obcaecati ipsa accusantium omnis xcepturi numquam incidunt consequuntur
+                            quisquam animi obcaecati ipsa accusantium omnis adipisci! Voluptatibus
+                            harum natus sapiente sunt consectetur qui praesentium aliquam reru
+                            adipisci! Voluptatibus
+                        </p>
+                    </div>
+                </article>
+            </section>
         </div>
+    </main>
 </body>
 
 </html>
