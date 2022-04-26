@@ -8,6 +8,7 @@
     <title>Account</title>
     <link rel="stylesheet" href="Styles/header.css">
     <link rel="stylesheet" href="Styles/main.css">
+    <link rel="stylesheet" href="Styles/account.css">
 </head>
 
 <body>
@@ -24,9 +25,11 @@
                 <div class="project smollmenu">
                     <img class="smollmenu" src='./Images/folder.svg'>
                 </div>
-                <div class="account smollmenu smollMenu-active">
-                    <a href="Account.html"><img src='./Images/monitor.svg'></a>
-                </div>
+                <a href="Account.html">
+                    <div class="account smollmenu">
+                        <img src='./Images/monitor.svg'>
+                    </div>
+                </a>
                 <div class="groups smollmenu">
                     <img class="smollmenu" src='./Images/users-alt.svg'>
                 </div>
@@ -37,44 +40,48 @@
                     <img class="smollmenu" src='./Images/cog.svg'>
                 </div>
             </aside>
-            <div class="pageAccountBlokA">
-                <div class="personalData">
-                    <div class="personFoto"></div>
-                    <div class="personName">Andy Cube
-                        <div class="personEmail">andycoube@gimail.com</div>
+            <div class="wraper-blocks">
+                <article class="content-block">
+                    <div class="personal-data">
+                        <div class="person-foto"></div>
+                        <div class="title-info">
+                            <p>Andy Cube</p>
+                            <p>andycoube@gimail.com</p>
+                        </div>
                     </div>
-                </div>
-                <div class="passwordChange">
-                    <div class="passwordIcon"></div>
-                    <div class="passwordText">Change Password
-                        <div class="somePasswordText">Please choose a password
-                            wich is longer than 6 characters</div>
-                    </div>
-                    <div class="passwordForm">
+                    <div class="password-change">
+                        <div class="password-icon">
+                            <img src="Images/padlock.svg">
+                        </div>
+                        <div class="title-info">
+                            <p>Change Password</p>
+                            <p>Please choose a password
+                                wich is longer than 6 characters
+                            </p>
+                        </div>
                         <form>
-                            <p class="Old_password">Old password</p>
+                            <p>Old password</p>
                             <input type="password" placeholder="Enter password" minlength="6" required>
-                            <p class="New_password">New password </p>
+                            <p>New password </p>
                             <input type="password" placeholder="Enter password" minlength="6" required>
-                            <p class="Confirm_password">Confirm password</p>
+                            <p>Confirm password</p>
                             <input type="password" placeholder="Enter password" minlength="6" required>
                             <div class="savePassword">
                                 <input type="submit" value="Save">
                             </div>
                         </form>
-
+                </article>
+                <article class="content-block bg">
+                    <div class="personal-data">
+                        <div class="company-icon"></div>
+                        <div class="title-info">
+                            <p>Company</p>
+                            <p>
+                                Optional, but we would appreciate
+                                if you fill out these form
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="companyInformation">
-                <div class="companyIcon"></div>
-                <div class="companyText">Company
-                    <div class="comeCompanyText">
-                        Optional, but we would appreciate
-                        if you fill out these form
-                    </div>
-                </div>
-                <div class="companyForm">
                     <form>
                         <p class="Company_name">Company name</p>
                         <input type="text" placeholder="logos IT-academy" id="Company-name">
@@ -98,14 +105,10 @@
                             <input type="submit" value="Save">
                         </div>
                     </form>
-                </div>
-
+                </article>
             </div>
         </div>
-
     </main>
-
-
 </body>
 
 </html>
