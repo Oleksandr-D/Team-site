@@ -78,7 +78,7 @@
    width: 150px;
 }
 
-.smollMenu-active {
+.smollmenu-active {
    width: 60px;
    height: 40px;
    background-color: rgb(112, 169, 255);
@@ -88,7 +88,7 @@
    align-items: center;
 }
 
-.smollMenu-active img {
+.smollmenu-active img {
    padding-top: 4px;
    width: 40px;
 }
@@ -211,6 +211,7 @@ input[type="text"]::placeholder {
    text-decoration: none;
    color: rgb(197, 197, 197);
    line-height: 30px;
+   padding-top: 0px;
 }
 
 input[type="text"]:focus,
@@ -232,9 +233,6 @@ input[type="password"]:invalid {
    text-align: right;
    margin-bottom: -63px;
 }
-
-
-
 
 .Country,
 .City,
