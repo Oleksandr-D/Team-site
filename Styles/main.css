@@ -35,7 +35,7 @@ main {
    align-self: flex-start;
 }
 
-.comany {
+.company {
    width: 49%;
    height: 130px;
    align-self: flex-start;
@@ -56,7 +56,7 @@ main {
 }
 
 .project-name>p:last-child,
-.comany>p:last-child,
+.company>p:last-child,
 .inner-block p:first-child,
 .inner-block>div+p,
 .data-por h5 {
@@ -85,7 +85,7 @@ main {
 }
 
 .project-name,
-.comany,
+.company,
 .inner-block,
 .data-por {
    background-color: #ffffff;
@@ -93,6 +93,13 @@ main {
    font-family: 'ChronicaPro';
    flex-direction: column;
    padding: 20px 25px;
+}
+
+.project-name,
+.company,
+.inner-block,
+.data-por {
+   box-shadow: 0px 0px 13px 0px rgb(127 127 127);
 }
 
 /* -----------------------------------------aside-------------------------------------- */

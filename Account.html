@@ -42,23 +42,26 @@
             </aside>
             <div class="wraper-blocks">
                 <article class="content-block">
-                    <div class="personal-data">
+                    <div class="personal-data shadows">
                         <div class="person-foto"></div>
                         <div class="title-info">
                             <p>Andy Cube</p>
                             <p>andycoube@gimail.com</p>
                         </div>
                     </div>
-                    <div class="password-change">
-                        <div class="password-icon">
-                            <img src="Images/padlock.svg">
+                    <div class="password-change shadows">
+                        <div>
+                            <div class="password-icon">
+                                <img src="Images/padlock.svg">
+                            </div>
+                            <div class="title-info">
+                                <p>Change Password</p>
+                                <p>Please choose a password
+                                    wich is longer than 6 characters
+                                </p>
+                            </div>
                         </div>
-                        <div class="title-info">
-                            <p>Change Password</p>
-                            <p>Please choose a password
-                                wich is longer than 6 characters
-                            </p>
-                        </div>
+
                         <form>
                             <p>Old password</p>
                             <input type="password" placeholder="Enter password" minlength="6" required>
@@ -66,14 +69,17 @@
                             <input type="password" placeholder="Enter password" minlength="6" required>
                             <p>Confirm password</p>
                             <input type="password" placeholder="Enter password" minlength="6" required>
-                            <div class="savePassword">
+                            <div>
                                 <input type="submit" value="Save">
                             </div>
                         </form>
+                    </div>
                 </article>
-                <article class="content-block bg">
+                <article class="content-block bg shadows">
                     <div class="personal-data">
-                        <div class="company-icon"></div>
+                        <div class="company-icon">
+                            <img src="Images/university.svg">
+                        </div>
                         <div class="title-info">
                             <p>Company</p>
                             <p>
@@ -83,25 +89,25 @@
                         </div>
                     </div>
                     <form>
-                        <p class="Company_name">Company name</p>
-                        <input type="text" placeholder="logos IT-academy" id="Company-name">
-                        <p class="Compny-address">Compny address</p>
-                        <input type="text" placeholder="61 I.Franka,Lviv" id="Compny_address">
-                        <div class="blokCompanyB">
-                            <div class="countrySity">
-                                <p class="Country">Country</p>
-                                <input type="text" placeholder="Enter country" id="Enter_country">
-                                <p class="City">City</p>
-                                <input type="text" placeholder="Enter city" id="Enter_city">
+                        <p>Company name</p>
+                        <input type="text" placeholder="logos IT-academy">
+                        <p>Compny address</p>
+                        <input type="text" placeholder="61 I.Franka,Lviv">
+                        <div class="company-second-block">
+                            <div>
+                                <p>Country</p>
+                                <input type="text" placeholder="Enter country">
+                                <p>City</p>
+                                <input type="text" placeholder="Enter city">
                             </div>
-                            <div class="statePostal">
-                                <p class="State">State</p>
-                                <input type="text" placeholder="Enter state" id="Enter_state">
-                                <p class="Postal-code">Postal code</p>
-                                <input type="text" placeholder="Enter code" id="Enter_code">
+                            <div>
+                                <p>State</p>
+                                <input type="text" placeholder="Enter state">
+                                <p>Postal code</p>
+                                <input type="text" placeholder="Enter code">
                             </div>
                         </div>
-                        <div class="saveData">
+                        <div>
                             <input type="submit" value="Save">
                         </div>
                     </form>
