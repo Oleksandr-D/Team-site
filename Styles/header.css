@@ -1,6 +1,13 @@
 @import url(resetCss.css);
 @import url(Fonts.css);
 
+
+:root{
+    --main-bg-color: rgb(215, 215, 215);
+    --main-shadow:rgb(105, 105, 105);
+    --main-color:rgb(112, 169, 255);
+}
+
 header {
     width: 100%;
     height: 85px;
@@ -35,111 +42,32 @@ nav {
 
 .menu-link:hover {
     transform: translateY(-3px);
-    box-shadow: 5px 7px 8px 3px rgb(160 160 160);
+    box-shadow: 5px 7px 8px 3px var(--main-shadow);
 }
 
 .menu-active {
     color: rgb(48, 48, 48);
-    box-shadow: 2px 4px 8px -3px rgb(160 160 160);
+    box-shadow: 2px 4px 8px -3px var(--main-shadow);
 }
+
+/* ----------------------------pages-------------------- */
+
+main {
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .content-wraper {
+    width: 97%;
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+ }
+
 
 /* -------------------------------------bugs pages------------------------------------ */
-
-
-.BlokA,
-.BlokB {
-    display: flex;
-    justify-content: space-around;
-    border-radius: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
-    align-self: center;
-    font-family: 'bahij-sultannahia';
-}
-
-.Fonto1,
-.Fonto2,
-.Fonto3,
-.Fonto4 {
-    width: 250px;
-    height: 250px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 20px;
-    margin-top: 40px;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: nowrap;
-    text-align: center;
-    padding: 30px 30px;
-    transition-property: background-color, transform, border;
-}
-
-.Fonto1:hover,
-.Fonto2:hover,
-.Fonto3:hover,
-.Fonto4:hover {
-    background-color: rgb(95, 168, 252);
-    transform: scale(1.1);
-    color: snow;
-    transform: color;
-}
-
-.Bfoto1,
-.Bfoto2,
-.Bfoto3,
-.Bfoto4 {
-    width: 250px;
-    height: 250px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 20px;
-    margin-top: 40px;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: nowrap;
-    text-align: center;
-    padding: 30px 30px;
-    transition-property: background-color, transform, border;
-}
-
-.Bfoto1:hover,
-.Bfoto2:hover,
-.Bfoto3:hover,
-.Bfoto4:hover {
-    background-color: rgb(95, 168, 252);
-    transform: scale(1.1);
-    color: snow;
-    transform: color;
-}
-
-.f1,
-.f2,
-.f3,
-.f4,
-.f5,
-.f6,
-.f7,
-.f8 {
-    border-radius: 100px;
-    width: 100px;
-    height: 100px;
-}
-
-.Logos {
-    color: rgb(197, 197, 197);
-    font-size: 17px;
-    transition-property: color;
-}
-
-.name {
-    transition-duration: 0.7s;
-    font-size: 23px;
-}
-
-.data {
-    margin-top: 45px;
-    font-size: 15px;
-    color: rgb(197, 197, 197);
-}
 
 table {
     position: absolute;
@@ -176,7 +104,7 @@ td:hover {
 }
 
 .DownloadImg:hover {
-    background-color: rgb(91, 174, 243);
+    background-color:  var(--main-color);;
     border-radius: 10px;
 }
 
@@ -194,42 +122,3 @@ input[type="checkbox"] {
     transform: scale(1.7);
 }
 
-
-
-/*-------------------------------------page Team------------------------------------*/
-.Fonto1::before,
-.Fonto2::before,
-.Fonto3::before,
-.Fonto4::before,
-.Bfoto1::before,
-.Bfoto2::before,
-.Bfoto3::before,
-.Bfoto4::before {
-    content: "";
-    z-index: -1;
-    transition-property: right, left, width, color, background-color;
-}
-
-.Fonto1:hover::before,
-.Fonto2:hover::before,
-.Fonto3:hover::before,
-.Fonto4:hover::before,
-.Bfoto1:hover::before,
-.Bfoto2:hover::before,
-.Bfoto3:hover::before,
-.Bfoto4:hover::before {
-    background-image: url(../Images/trash-alt.svg);
-    background-repeat: no-repeat;
-    background-size: 30px;
-    background-position: center;
-    display: block;
-    background-color: white;
-    border-radius: 10px;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    position: absolute;
-    top: -20px;
-    left: 220px;
-    right: 0px;
-}
