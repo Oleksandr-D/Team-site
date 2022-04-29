@@ -2,10 +2,10 @@
 @import url(Fonts.css);
 
 
-:root{
+:root {
     --main-bg-color: rgb(215, 215, 215);
-    --main-shadow:rgb(105, 105, 105);
-    --main-color:rgb(112, 169, 255);
+    --main-shadow: rgb(71, 71, 71);
+    --main-color: rgb(112, 169, 255);
 }
 
 header {
@@ -50,75 +50,101 @@ nav {
     box-shadow: 2px 4px 8px -3px var(--main-shadow);
 }
 
-/* ----------------------------pages-------------------- */
+/* ----------------------------------------all pages---------------------------------------- */
 
 main {
     display: flex;
     justify-content: center;
- }
- 
- .content-wraper {
+}
+
+.content-wraper {
     width: 97%;
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 0px 20px;
     display: flex;
     align-items: center;
- }
-
-
-/* -------------------------------------bugs pages------------------------------------ */
-
-table {
-    position: absolute;
-    top: 153px;
-    left: 12%;
+    box-shadow: inset 0px 0px 10px 0px var(--main-shadow);
 }
 
-th {
-    width: 232px;
-    height: 80px;
-    font-family: 'bahij-sultannahia';
-    font-size: 20px;
-}
+/* -----------------------------------------aside-------------------------------------- */
 
-td {
-    width: 232px;
-    height: 80px;
-    transition-duration: 0.3s;
-    transition-property: background-color, transform, border;
-    text-align: center;
-    font-family: 'bahij-sultannahia';
-    font-size: 22px;
-}
-
-td:hover {
-    background-color: rgb(255, 255, 255);
+.side-menu {
+    width: 105px;
+    height: 420px;
+    background-color: #ffffff;
     border-radius: 20px;
+    font-family: 'ChronicaPro';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 0px 13px 0px var(--main-shadow);
 }
 
-.DownloadImg {
+.smollmenu {
     width: 40px;
     height: 40px;
-    position: absolute top 20px;
+    color: black;
+    transition-duration: 0.5s;
 }
 
-.DownloadImg:hover {
-    background-color:  var(--main-color);;
-    border-radius: 10px;
+.smollmenu:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
-.lesonNumber,
-.topicNum,
-.dateNumber,
-.download,
-.complited {
-    width: 228px;
-    height: 40px;
-    display: inline-table;
+.project::after,
+.account::after,
+.groups::after,
+.cloud::after,
+.setting::after {
+    content: "";
+    font-family: 'Vollkorn';
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    width: 0px;
+    line-height: 40px;
+    border-radius: 20px;
+    position: absolute;
+    top: 0px;
+    left: -7px;
+    overflow: hidden;
+    z-index: -2;
+    transition-duration: 0.7s;
+    text-align: end;
+    padding-right: 20px;
+    transition-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 
-input[type="checkbox"] {
-    transform: scale(1.7);
+.project:hover::after {
+    content: "Project";
+    background-color: var(--main-color);
+    width: 150px;
+    transition-duration: 0.7s;
 }
 
+.account:hover::after {
+    content: "Account";
+    background-color: var(--main-color);
+    width: 150px;
+}
+
+.groups:hover::after {
+    content: "Groups";
+    background-color: var(--main-color);
+    width: 150px;
+}
+
+.cloud:hover::after {
+    content: "Cloud";
+    background-color: var(--main-color);
+    width: 150px;
+}
+
+.setting:hover::after {
+    content: "Setting";
+    background-color: var(--main-color);
+    width: 150px;
+}
