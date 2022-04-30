@@ -1,0 +1,792 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*reset. css*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'Gentium Book Basic';
+  src: '../Styles/Fonts/Gentium_Book_Basic/GentiumBookBasic-Regular.ttf';
+}
+
+@font-face {
+  font-family: 'Vollkorn';
+  src: url("../Styles/Fonts/Vollkorn/Vollkorn-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: 'Alegreya';
+  src: url("../Styles/Fonts/Alegreya/Alegreya-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: 'bahij-sultannahia';
+  src: url("../Styles/Fonts/bahij-sultannahia.ttf");
+}
+
+@font-face {
+  font-family: 'ChronicaPro';
+  src: url("../Styles/ChronicaPro-Regular.ttf");
+}
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px 0px;
+}
+
+.top-wraper,
+.bottom-wraper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 10px 0px 10px 20px;
+}
+
+.project-name {
+  width: 49%;
+  height: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.company {
+  width: 49%;
+  height: 130px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.disc-team-block {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.inner-block {
+  height: 194px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.project-name > p:last-child,
+.company > p:last-child,
+.inner-block p:first-child,
+.inner-block > div + p,
+.data-por h5 {
+  font-weight: bold;
+}
+
+.inner-block img {
+  width: 120px;
+  height: 138px;
+}
+
+.team {
+  width: 70%;
+  margin-left: 20px;
+}
+
+.data-por {
+  width: 38%;
+  height: 410px;
+}
+
+.data-por img {
+  width: 120px;
+  height: 115px;
+  margin-bottom: 20px;
+}
+
+.project-name,
+.company,
+.inner-block,
+.data-por {
+  background-color: #ffffff;
+  border-radius: 20px;
+  font-family: 'ChronicaPro',Helvetica, sans-serif;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 25px;
+}
+
+.project-name,
+.company,
+.inner-block,
+.data-por {
+  -webkit-box-shadow: 0px 0px 13px 0px #474747;
+          box-shadow: 0px 0px 13px 0px #474747;
+}
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px 0px;
+}
+
+.rows {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: 'bahij-sultannahia';
+}
+
+.row-item {
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 20px 20px;
+  text-align: center;
+  padding: 30px 10px;
+  -webkit-box-shadow: 0px 0px 10px 0px #474747;
+          box-shadow: 0px 0px 10px 0px #474747;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  position: relative;
+}
+
+.row-item:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transform: color;
+          transform: color;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 5px 7px 8px 5px #474747;
+          box-shadow: 5px 7px 8px 5px #474747;
+  cursor: pointer;
+}
+
+.row-item img {
+  border-radius: 100px;
+  height: 100px;
+}
+
+.row-item h3 {
+  font-size: 23px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.row-item h3:hover {
+  color: #70a9ff;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.row-item p {
+  color: #ababab;
+  font-size: 17px;
+  -webkit-transition-property: color;
+  transition-property: color;
+}
+
+.data {
+  margin-top: 45px;
+  font-size: 15px;
+  color: #ababab;
+}
+
+.row-item::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  -webkit-transition-property: all;
+  transition-property: all;
+}
+
+.row-item:hover::before {
+  background-image: url(../Images/trash-alt.svg);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 10px 0px #474747;
+          box-shadow: 0px 0px 10px 0px #474747;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -20px;
+  left: 220px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.container-lesson {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+table {
+  width: 90%;
+  height: 90%;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 10px 0px #474747;
+          box-shadow: 0px 0px 10px 0px #474747;
+  border-radius: 20px;
+  margin: 30px 0px;
+  font-family: 'bahij-sultannahia';
+  font-size: 20px;
+}
+
+tr {
+  line-height: 80px;
+}
+
+th {
+  font-size: 24px;
+}
+
+td {
+  text-align: center;
+  font-size: 22px;
+  position: relative;
+}
+
+td img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+}
+
+td img:hover {
+  background-color: #70a9ff;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+input[type="checkbox"] {
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+}
+
+form ~ tr:hover {
+  -webkit-box-shadow: 0px 0px 10px 0px #474747;
+          box-shadow: 0px 0px 10px 0px #474747;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+form ~ tr:last-child:hover {
+  border-bottom-right-radius: 20px;
+  -webkit-box-shadow: 0px 0px 10px 0px #474747;
+          box-shadow: 0px 0px 10px 0px #474747;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.wraper-blocks {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 15px 0px;
+}
+
+.content-block {
+  width: 48.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 10px 0px 10px 20px;
+}
+
+.personal-data {
+  width: 100%;
+  height: 90px;
+  background-color: white;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 40px;
+}
+
+.password-icon,
+.company-icon,
+.person-foto {
+  width: 50px;
+  height: 50px;
+  background-color: #70a9ff;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 20px 0px 0px;
+}
+
+.person-foto {
+  background-image: url(../Images/1.jpg);
+  background-size: cover;
+}
+
+.password-icon img,
+.company-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.company-icon {
+  background-color: #ffc13c;
+}
+
+.title-info {
+  width: 80%;
+}
+
+.title-info p:first-child {
+  font-family: 'bahij-sultannahia';
+  font-size: 30px;
+}
+
+.title-info p:last-child {
+  font-family: 'ChronicaPro';
+  font-size: 10px;
+  text-decoration: none;
+  color: #c5c5c5;
+}
+
+.password-change {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px 0px;
+}
+
+.password-change > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 40px;
+}
+
+form {
+  width: 100%;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px 40px;
+}
+
+form p {
+  font-family: 'bahij-sultannahia';
+  font-size: 20px;
+}
+
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  margin: 10px 0px 25px 0px;
+  border-radius: 20px;
+  border: none;
+  font-family: 'bahij-sultannahia';
+  padding-left: 20px;
+  -webkit-box-shadow: 0px 0px 10px 0px #b6b6b6;
+          box-shadow: 0px 0px 10px 0px #b6b6b6;
+}
+
+input[type="password"]::-webkit-input-placeholder,
+input[type="text"]::-webkit-input-placeholder {
+  font-size: 15px;
+  color: #b6b6b6;
+}
+
+input[type="password"]:-ms-input-placeholder,
+input[type="text"]:-ms-input-placeholder {
+  font-size: 15px;
+  color: #b6b6b6;
+}
+
+input[type="password"]::-ms-input-placeholder,
+input[type="text"]::-ms-input-placeholder {
+  font-size: 15px;
+  color: #b6b6b6;
+}
+
+input[type="password"]::placeholder,
+input[type="text"]::placeholder {
+  font-size: 15px;
+  color: #b6b6b6;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 13px 0px #70a9ff;
+          box-shadow: 0px 0px 13px 0px #70a9ff;
+}
+
+input[type="password"]:invalid {
+  -webkit-box-shadow: 0px 0px 13px 0px #ff2020;
+          box-shadow: 0px 0px 13px 0px #ff2020;
+}
+
+input[type="submit"] {
+  border-radius: 5px;
+  background-color: #70a9ff;
+  color: #ffffff;
+  width: 80px;
+  height: 38px;
+  border: none;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+input[type="submit"]:hover {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 13px 0px #70a9ff;
+          box-shadow: 0px 0px 13px 0px #70a9ff;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.company-second-block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 8px;
+}
+
+.bg {
+  background-color: white;
+  border-radius: 20px;
+  padding-bottom: 34px;
+}
+
+.shadows {
+  -webkit-box-shadow: 0px 0px 13px 0px #474747;
+          box-shadow: 0px 0px 13px 0px #474747;
+}
+
+header {
+  width: 100%;
+  height: 85px;
+  padding: 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.menu-link {
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'ChronicaPro';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 40px;
+  color: #000000;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+.menu-link:nth-child(2) {
+  margin: 0px 20px;
+}
+
+.menu-link:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 5px 7px 8px 3px #474747;
+          box-shadow: 5px 7px 8px 3px #474747;
+}
+
+.menu-active {
+  color: #303030;
+  -webkit-box-shadow: 2px 4px 8px -3px #474747;
+          box-shadow: 2px 4px 8px -3px #474747;
+}
+
+/* ----------------------------------------all pages---------------------------------------- */
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content-wraper {
+  width: 97%;
+  background-color: #d7d7d7;
+  border-radius: 20px;
+  padding: 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: inset 0px 0px 10px 0px #474747;
+          box-shadow: inset 0px 0px 10px 0px #474747;
+}
+
+/* -----------------------------------------aside-------------------------------------- */
+.side-menu {
+  width: 105px;
+  height: 420px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  font-family: 'ChronicaPro';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 13px 0px #474747;
+          box-shadow: 0px 0px 13px 0px #474747;
+}
+
+.smollmenu {
+  width: 40px;
+  height: 40px;
+  color: black;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.smollmenu:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  cursor: pointer;
+}
+
+.smollmenu-active {
+  width: 60px;
+  height: 40px;
+  background-color: #70a9ff;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.smollmenu-active img {
+  padding-top: 4px;
+  width: 40px;
+}
+
+.project::after,
+.account::after,
+.groups::after,
+.cloud::after,
+.setting::after {
+  content: "";
+  font-family: 'Vollkorn';
+  color: white;
+  cursor: pointer;
+  width: 0px;
+  line-height: 40px;
+  border-radius: 20px;
+  position: absolute;
+  top: 0px;
+  left: -7px;
+  overflow: hidden;
+  z-index: -2;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+  text-align: end;
+  padding-right: 20px;
+  -webkit-transition-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+          transition-timing-function: cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.project:hover::after {
+  content: "Project";
+  background-color: #70a9ff;
+  width: 150px;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+
+.account:hover::after {
+  content: "Account";
+  background-color: #70a9ff;
+  width: 150px;
+}
+
+.groups:hover::after {
+  content: "Groups";
+  background-color: #70a9ff;
+  width: 150px;
+}
+
+.cloud:hover::after {
+  content: "Cloud";
+  background-color: #70a9ff;
+  width: 150px;
+}
+
+.setting:hover::after {
+  content: "Setting";
+  background-color: #70a9ff;
+  width: 150px;
+}
+/*# sourceMappingURL=common.css.map */

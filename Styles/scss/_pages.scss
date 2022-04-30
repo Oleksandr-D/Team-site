@@ -1,0 +1,404 @@
+
+//-------------------------main page-----------------------
+.container {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   padding: 20px 0px;
+}
+
+.top-wraper,
+.bottom-wraper {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin: 10px 0px 10px 20px;
+}
+
+.project-name {
+   width: 49%;
+   height: 130px;
+   display: flex;
+   align-self: flex-start;
+}
+
+.company {
+   width: 49%;
+   height: 130px;
+   align-self: flex-start;
+}
+
+.disc-team-block {
+   width: 60%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.inner-block {
+   height: 194px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   overflow: hidden;
+}
+
+.project-name>p:last-child,
+.company>p:last-child,
+.inner-block p:first-child,
+.inner-block>div+p,
+.data-por h5 {
+   font-weight: bold;
+}
+
+.inner-block img {
+   width: 120px;
+   height: 138px;
+}
+
+.team {
+   width: 70%;
+   margin-left: 20px;
+}
+
+.data-por {
+   width: 38%;
+   height: 410px;
+}
+
+.data-por img {
+   width: 120px;
+   height: 115px;
+   margin-bottom: 20px;
+}
+
+.project-name,
+.company,
+.inner-block,
+.data-por {
+   background-color: #ffffff;
+   border-radius: 20px;
+   font-family: 'ChronicaPro',Helvetica, sans-serif;
+   flex-direction: column;
+   padding: 20px 25px;
+}
+
+.project-name,
+.company,
+.inner-block,
+.data-por {
+   box-shadow: 0px 0px 13px 0px $main-shadow;
+}
+
+//---------------------------------------team page---------------------------
+
+.container {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   padding: 20px 0px;
+}
+
+.rows {
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   font-family: 'bahij-sultannahia';
+}
+
+.row-item {
+   width: 250px;
+   height: 250px;
+   background-color: rgb(255, 255, 255);
+   border-radius: 20px;
+   margin: 20px 20px;
+   text-align: center;
+   padding: 30px 10px;
+   box-shadow: 0px 0px 10px 0px $main-shadow;
+   transition-duration: 0.5s;
+   position: relative;
+}
+
+.row-item:hover {
+   transition-duration: 0.5s;
+   transform: color;
+   transform: translateY(-5px);
+   box-shadow: 5px 7px 8px 5px $main-shadow;
+   cursor: pointer;
+}
+
+.row-item img {
+   border-radius: 100px;
+   height: 100px;
+}
+
+.row-item h3 {
+   font-size: 23px;
+   transition-duration: 0.3s;
+}
+
+.row-item h3:hover {
+   color: $main-color;
+   transition-duration: 0.3s;
+}
+
+.row-item p {
+   color: rgb(171, 171, 171);
+   font-size: 17px;
+   transition-property: color;
+}
+
+.data {
+   margin-top: 45px;
+   font-size: 15px;
+   color: rgb(171, 171, 171);
+}
+
+.row-item::before {
+   content: "";
+   width: 0px;
+   height: 0px;
+   transition-delay: 0.5s;
+   transition-property: all;
+}
+
+.row-item:hover::before {
+   background-image: url(../Images/trash-alt.svg);
+   background-repeat: no-repeat;
+   background-size: 30px;
+   background-position: center;
+   background-color: #ffffff;
+   box-shadow: 0px 0px 10px 0px $main-shadow;
+   border-radius: 10px;
+   width: 50px;
+   height: 50px;
+   position: absolute;
+   top: -20px;
+   left: 220px;
+   cursor: pointer;
+   transition-duration: 0.5s;
+}
+
+//-------------------------------lessons page--------------------------
+
+.container-lesson {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+table {
+   width: 90%;
+   height: 90%;
+   background-color: rgb(255, 255, 255);
+   box-shadow: 0px 0px 10px 0px $main-shadow;
+   border-radius: 20px;
+   margin: 30px 0px;
+   font-family: 'bahij-sultannahia';
+   font-size: 20px;
+}
+
+tr {
+   line-height: 80px;
+}
+
+th {
+   font-size: 24px;
+}
+
+td {
+   text-align: center;
+   font-size: 22px;
+   position: relative;
+}
+
+td img {
+   width: 40px;
+   height: 40px;
+   position: absolute;
+   top: 20px;
+}
+
+td img:hover {
+   background-color: $main-color;
+   border-radius: 5px;
+   transition-duration: 0.3s;
+}
+
+input[type="checkbox"] {
+   transform: scale(1.7);
+}
+
+form~tr:hover {
+   box-shadow: 0px 0px 10px 0px $main-shadow;
+   transition-duration: 0.3s;
+}
+
+form~tr:last-child:hover {
+   border-bottom-right-radius: 20px;
+   box-shadow: 0px 0px 10px 0px $main-shadow;
+   border-radius: 0px 0px 20px 20px;
+}
+
+//--------------------------------account page---------------------------
+
+.wraper-blocks {
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   padding: 15px 0px;
+}
+
+.content-block {
+   width: 48.3%;
+   display: flex;
+   flex-wrap: wrap;
+   margin: 10px 0px 10px 20px;
+}
+
+.personal-data {
+   width: 100%;
+   height: 90px;
+   background-color: white;
+   border-radius: 20px;
+   display: flex;
+   align-items: center;
+   padding: 0px 40px;
+}
+
+.password-icon,
+.company-icon,
+.person-foto {
+   width: 50px;
+   height: 50px;
+   background-color: $main-color;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0px 20px 0px 0px;
+}
+
+.person-foto {
+   background-image: url(../Images/1.jpg);
+   background-size: cover;
+}
+
+.password-icon img,
+.company-icon img {
+   width: 40px;
+   height: 40px;
+}
+
+.company-icon {
+   background-color: rgb(255, 193, 60);
+}
+
+.title-info {
+   width: 80%;
+}
+
+.title-info p:first-child {
+   font-family: 'bahij-sultannahia';
+   font-size: 30px;
+}
+
+.title-info p:last-child {
+   font-family: 'ChronicaPro';
+   font-size: 10px;
+   text-decoration: none;
+   color: rgb(197, 197, 197);
+}
+
+.password-change {
+   width: 100%;
+   background-color: #ffffff;
+   border-radius: 20px;
+   display: flex;
+   flex-wrap: wrap;
+   padding: 20px 0px;
+}
+
+.password-change>div {
+   display: flex;
+   padding: 0px 40px;
+}
+
+form {
+   width: 100%;
+   margin-top: 20px;
+   display: flex;
+   flex-direction: column;
+   padding: 0px 40px;
+}
+
+form p {
+   font-family: 'bahij-sultannahia';
+   font-size: 20px;
+}
+
+input[type="password"],
+input[type="text"] {
+   width: 100%;
+   height: 40px;
+   font-size: 20px;
+   margin: 10px 0px 25px 0px;
+   border-radius: 20px;
+   border: none;
+   font-family: 'bahij-sultannahia';
+   padding-left: 20px;
+   box-shadow: 0px 0px 10px 0px rgb(182, 182, 182);
+}
+
+input[type="password"]::placeholder,
+input[type="text"]::placeholder {
+   font-size: 15px;
+   color: rgb(182, 182, 182);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+   outline: none;
+   box-shadow: 0px 0px 13px 0px $main-color;
+}
+
+input[type="password"]:invalid {
+   box-shadow: 0px 0px 13px 0px rgb(255, 32, 32);
+}
+
+input[type="submit"] {
+   border-radius: 5px;
+   background-color: $main-color;
+   color: #ffffff;
+   width: 80px;
+   height: 38px;
+   border: none;
+   transition-duration: 0.5s;
+}
+
+input[type="submit"]:hover {
+   outline: none;
+   box-shadow: 0px 0px 13px 0px $main-color;
+   border-radius: 5px;
+   transition-duration: 0.5s;
+}
+
+.company-second-block {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-top: 8px;
+}
+
+.bg {
+   background-color: white;
+   border-radius: 20px;
+   padding-bottom: 34px;
+}
+
+.shadows {
+   box-shadow: 0px 0px 13px 0px $main-shadow;
+}
