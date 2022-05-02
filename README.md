@@ -1,2 +1,3 @@
 # Team-site
-practice, html, css, +github
+Сreating a site with figma.
+Practice. html, css, scss, js ...
