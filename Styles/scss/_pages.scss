@@ -1,4 +1,3 @@
-
 //-------------------------main page-----------------------
 .container {
    width: 100%;
@@ -50,6 +49,7 @@
 .inner-block>div+p,
 .data-por h5 {
    font-weight: bold;
+   margin: 10px 0px;
 }
 
 .inner-block img {
@@ -79,17 +79,49 @@
 .data-por {
    background-color: #ffffff;
    border-radius: 20px;
-   font-family: 'ChronicaPro',Helvetica, sans-serif;
+   font-family: 'ChronicaPro', Helvetica, sans-serif;
    flex-direction: column;
    padding: 20px 25px;
-}
-
-.project-name,
-.company,
-.inner-block,
-.data-por {
    box-shadow: 0px 0px 13px 0px $main-shadow;
 }
+
+@media screen and (max-width:870px) {
+
+   .top-wraper,
+   .bottom-wraper {
+      flex-direction: column;
+   }
+
+   .project-name,
+   .company,
+   .inner-block,
+   .data-por {
+      width: 100%;
+      
+   }
+   .data-por {
+      height: initial;
+   }
+   .disc-team-block {
+      width: 100%;
+   }
+
+   .project-name,
+   .inner-block {
+      margin-bottom: 20px;
+   }
+
+   .inner-block {
+      display: flex;
+      overflow: visible;
+      height: 100%;
+   }
+   .team {
+      width: 100%;
+      margin-left: 0px;
+  }
+}
+
 
 //---------------------------------------team page---------------------------
 

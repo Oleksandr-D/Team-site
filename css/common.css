@@ -76,7 +76,7 @@ table {
 
 @font-face {
   font-family: 'ChronicaPro';
-  src: url("../Styles/ChronicaPro-Regular.ttf");
+  src: url("../Styles/Fonts/ChronicaPro-Regular.ttf");
 }
 
 .container {
@@ -153,6 +153,7 @@ table {
 .inner-block > div + p,
 .data-por h5 {
   font-weight: bold;
+  margin: 10px 0px;
 }
 
 .inner-block img {
@@ -182,20 +183,51 @@ table {
 .data-por {
   background-color: #ffffff;
   border-radius: 20px;
-  font-family: 'ChronicaPro',Helvetica, sans-serif;
+  font-family: 'ChronicaPro', Helvetica, sans-serif;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 20px 25px;
-}
-
-.project-name,
-.company,
-.inner-block,
-.data-por {
   -webkit-box-shadow: 0px 0px 13px 0px #474747;
           box-shadow: 0px 0px 13px 0px #474747;
+}
+
+@media screen and (max-width: 870px) {
+  .top-wraper,
+  .bottom-wraper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .project-name,
+  .company,
+  .inner-block,
+  .data-por {
+    width: 100%;
+  }
+  .data-por {
+    height: initial;
+  }
+  .disc-team-block {
+    width: 100%;
+  }
+  .project-name,
+  .inner-block {
+    margin-bottom: 20px;
+  }
+  .inner-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: visible;
+    height: 100%;
+  }
+  .team {
+    width: 100%;
+    margin-left: 0px;
+  }
 }
 
 .container {
