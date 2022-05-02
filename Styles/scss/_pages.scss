@@ -435,3 +435,203 @@ input[type="submit"]:hover {
 .shadows {
    box-shadow: 0px 0px 13px 0px $main-shadow;
 }
+
+//--------------------------------Project page--------------------------------
+
+.animation-block {
+   width: 100%;
+   height: 500px;
+   background-color: #ffffff;
+   padding: 20px;
+   position: relative;
+   transform-style: preserve-3d;
+}
+
+.animaded-text {
+   height: 50px;
+   line-height: 50px;
+   text-align: center;
+   font-family: 'Alegreya';
+   font-size: 0px;
+   font-weight: bold;
+   margin-bottom: 10px;
+   opacity: 0;
+   animation-name: show;
+   animation-duration: 10s;
+   animation-iteration-count: 1;
+   animation-fill-mode: forwards;
+}
+
+.animated-circle {
+   width: 20px;
+   height: 20px;
+   background-color: $main-color;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   animation-name: move;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-duration: 10s;
+}
+
+.animated-circle:hover,
+.animaded-text:hover,
+.blue:hover,
+.orange:hover,
+.green:hover,
+.red:hover {
+   animation-play-state: paused;
+}
+
+@keyframes show {
+
+   5% {
+      transform: rotateZ(-10deg);
+   }
+
+   25% {
+      transform: rotateZ(0deg);
+      opacity: 1;
+   }
+
+   50% {
+      color: $main-color;
+   }
+
+   100% {
+      color: black;
+      opacity: 1;
+      font-size: 20px;
+   }
+}
+
+@keyframes move {
+   0% {
+      top: 0%;
+      left: 0%;
+   }
+
+   25% {
+      top: 0%;
+      left: calc(100% - 20px);
+   }
+
+   50% {
+      top: calc(100% - 20px);
+      left: calc(100% - 20px);
+      transform: rotateZ(180deg);
+      border-radius: 90%;
+   }
+
+   75% {
+      top: calc(100% - 20px);
+      left: 0%;
+      border-radius: 0%;
+   }
+
+   100% {
+      top: 0%;
+      left: 0%;
+      transform: rotateZ(360deg);
+   }
+
+}
+
+.pulse-container {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   padding: 20px 0px;
+   justify-content: space-evenly;
+}
+
+.icon {
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+}
+
+.blue {
+   background-color: #001eff;
+   animation: bl 2s infinite;
+   animation-delay: 5s;
+}
+
+.red {
+   background-color: #ff0000;
+   animation: rd 2s infinite;
+   animation-delay: 5s;
+}
+
+.orange {
+   background-color: #ffb300;
+   animation: or 2s infinite;
+   animation-delay: 5s;
+}
+
+.green {
+   background-color: #22ce00;
+   animation: gr 2s infinite;
+   animation-delay: 5s;
+}
+
+@keyframes bl {
+   0% {
+      box-shadow: 0 0 0 #001eff;
+   }
+
+   50% {
+      box-shadow: 0 0 0 30px rgba(161, 161, 161, 0);
+   }
+
+   100% {
+      box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+   }
+
+}
+
+@keyframes rd {
+   0% {
+      box-shadow: 0 0 0 #ff0000;
+   }
+
+   50% {
+      box-shadow: 0 0 0 30px rgba(161, 161, 161, 0);
+   }
+
+   100% {
+      box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+   }
+
+}
+
+@keyframes or {
+   0% {
+      box-shadow: 0 0 0 #ffb300;
+   }
+
+   50% {
+      box-shadow: 0 0 0 30px rgba(161, 161, 161, 0);
+   }
+
+   100% {
+      box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+   }
+
+}
+
+@keyframes gr {
+   0% {
+      box-shadow: 0 0 0 #22ce00;
+   }
+
+   50% {
+      box-shadow: 0 0 0 30px rgba(161, 161, 161, 0);
+   }
+
+   100% {
+      box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+   }
+
+}
