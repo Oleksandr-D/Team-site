@@ -638,6 +638,7 @@ input[type="submit"]:hover {
   line-height: 50px;
   text-align: center;
   font-family: 'Alegreya';
+  text-shadow: 5px 7px 8px #f3f300, -5px -7px 8px #70a9ff;
   font-size: 0px;
   font-weight: bold;
   margin-bottom: 10px;
