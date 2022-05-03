@@ -626,7 +626,6 @@ input[type="submit"]:hover {
 
 .animation-block {
   width: 100%;
-  height: 500px;
   background-color: #ffffff;
   padding: 20px;
   position: relative;
@@ -653,10 +652,11 @@ input[type="submit"]:hover {
           animation-fill-mode: forwards;
 }
 
-.animated-circle {
+.animated-circle,
+.animated-circle-yellow {
   width: 20px;
   height: 20px;
-  background-color: #70a9ff;
+  background-color: #fff200;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -670,6 +670,13 @@ input[type="submit"]:hover {
           animation-duration: 10s;
 }
 
+.animated-circle-yellow {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  background-color: #70a9ff;
+}
+
+.animated-circle-yellow:hover,
 .animated-circle:hover,
 .animaded-text:hover,
 .blue:hover,
@@ -946,6 +953,86 @@ input[type="submit"]:hover {
   100% {
     -webkit-box-shadow: 0 0 0 rgba(255, 255, 255, 0);
             box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+.wraper-center {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.backgr {
+  background: url("../../../../../Wallpapers/truzub.jpg");
+  width: 390px;
+  height: 390px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.gradients {
+  width: 100%;
+  background: radial-gradient(ellipse at top, blue, transparent), radial-gradient(ellipse at bottom, yellow, transparent);
+  -webkit-animation: backGr 4s infinite;
+          animation: backGr 4s infinite;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  animation-direction: reverse;
+}
+
+@-webkit-keyframes backGr {
+  0% {
+    background: radial-gradient(ellipse at top, rgba(0, 0, 255, 0.5), transparent), radial-gradient(ellipse at bottom, rgba(255, 255, 0, 0.5), transparent);
+  }
+  25% {
+    background: radial-gradient(ellipse at top, rgba(0, 0, 255, 0.6), transparent), radial-gradient(ellipse at bottom, rgba(255, 255, 0, 0.6), transparent);
+    background-clip: content-box;
+  }
+  50% {
+    background: radial-gradient(ellipse at top, rgba(0, 0, 255, 0.7), transparent), radial-gradient(ellipse at bottom, rgba(255, 255, 0, 0.7), transparent);
+  }
+  75% {
+    background: radial-gradient(ellipse at top, rgba(0, 0, 255, 0.8), transparent), radial-gradient(ellipse at bottom, rgba(255, 255, 0, 0.8), transparent);
+  }
+  100% {
+    background: radial-gradient(ellipse at top, blue, transparent), radial-gradient(ellipse at bottom, yellow, transparent);
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
+}
+
+@keyframes backGr {
+  0% {
+    background: radial-gradient(ellipse at top, rgba(0, 0, 255, 0.5), transparent), radial-gradient(ellipse at bottom, rgba(255, 255, 0, 0.5), transparent);
+  }
+  25% {
+    background: radial-gradient(ellipse at top, rgba(0, 0, 255, 0.6), transparent), radial-gradient(ellipse at bottom, rgba(255, 255, 0, 0.6), transparent);
+    background-clip: content-box;
+  }
+  50% {
+    background: radial-gradient(ellipse at top, rgba(0, 0, 255, 0.7), transparent), radial-gradient(ellipse at bottom, rgba(255, 255, 0, 0.7), transparent);
+  }
+  75% {
+    background: radial-gradient(ellipse at top, rgba(0, 0, 255, 0.8), transparent), radial-gradient(ellipse at bottom, rgba(255, 255, 0, 0.8), transparent);
+  }
+  100% {
+    background: radial-gradient(ellipse at top, blue, transparent), radial-gradient(ellipse at bottom, yellow, transparent);
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
   }
 }
 
