@@ -45,21 +45,26 @@
                   <div class="animated-circle"></div>
                   <div class="animated-circle-yellow"></div>
                   <h4 class="animaded-text">Ready for animation using only CSS</h4>
-                  <div class="pulse-container">
-                     <div class="icon blue"></div>
+                  <div class="pulse-container" ondrop="drop(event)" ondragover="allowDrop(event)" >
+                     <div id="drag1" ondragstart="drag(event)" draggable="true" 
+                          class="icon blue" >
+                  </div>
                      <div class="icon red"></div>
                      <div class="icon orange"></div>
                      <div class="icon green"></div>
                   </div>
                   <div class="wraper-center">
                      <div class="backgr">
-                        <div class="gradients"></div>
+                        <div id="drop" ondrop="drop(event)" ondragover="allowDrop(event)"
+                             class="gradients">
+                         </div>
                      </div>
                   </div>
                </div>
             </article>
          </div>
       </div>
+      <script src="script/main-js.js"></script>
 </body>
 
 </html>

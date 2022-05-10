@@ -373,7 +373,8 @@ form p {
 }
 
 input[type="password"],
-input[type="text"] {
+input[type="text"],
+#companyName {
    width: 100%;
    height: 40px;
    font-size: 20px;
@@ -397,11 +398,13 @@ input[type="password"]:focus {
    box-shadow: 0px 0px 13px 0px $main-color;
 }
 
-input[type="password"]:invalid {
+input[type="password"]:invalid,
+input[type="text"]:invalid {
    box-shadow: 0px 0px 13px 0px rgb(255, 32, 32);
 }
 
-input[type="submit"] {
+input[type="submit"],
+input[type="button"] {
    border-radius: 5px;
    background-color: $main-color;
    color: #ffffff;
@@ -411,7 +414,8 @@ input[type="submit"] {
    transition-duration: 0.5s;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover,
+input[type="button"]:hover {
    outline: none;
    box-shadow: 0px 0px 13px 0px $main-color;
    border-radius: 5px;
@@ -436,6 +440,31 @@ input[type="submit"]:hover {
    box-shadow: 0px 0px 13px 0px $main-shadow;
 }
 
+.modal-container {
+   width: 100%;
+   height: 100%;
+   background-color: #737373aa;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   display: none;
+}
+
+.modal-wraper {
+   display: flex;
+   justify-content: center;
+}
+
+#title-company-name {
+   font-family: 'bahij-sultannahia';
+   text-align: center;
+   font-size: 42px;
+   text-shadow: 5px 7px 8px rgb(243, 243, 0), -5px -7px 8px $main-color;
+}
+
 //--------------------------------Project page--------------------------------
 
 .animation-block {
@@ -451,7 +480,7 @@ input[type="submit"]:hover {
    line-height: 50px;
    text-align: center;
    font-family: 'Alegreya';
-   text-shadow:  5px 7px 8px rgb(243, 243, 0), -5px -7px 8px $main-color, ;
+   text-shadow: 5px 7px 8px rgb(243, 243, 0), -5px -7px 8px $main-color, ;
    font-size: 0px;
    font-weight: bold;
    margin-bottom: 10px;
@@ -556,7 +585,7 @@ input[type="submit"]:hover {
 .icon {
    width: 20px;
    height: 20px;
-   border-radius: 50%;
+   border-radius: 100%;
 }
 
 .blue {
