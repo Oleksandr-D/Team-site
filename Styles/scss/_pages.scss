@@ -675,10 +675,10 @@ input[type="button"]:hover {
 .wraper-center {
    width: 100%;
    display: flex;
-   display: flex;
    align-items: center;
    justify-content: center;
    align-content: center;
+   flex-wrap: wrap;
 }
 
 .backgr {
@@ -728,4 +728,22 @@ input[type="button"]:hover {
       animation-delay: 1s;
 
    }
+}
+
+.settings-wraper {
+   height: 100%;
+   padding: 20px;
+}
+
+#fonts {
+   width: 40%;
+}
+
+.settings-wraper>p {
+   margin-top: 20px;
+}
+.col-box{
+   width: 100px;
+   height: 70px;
+   border: 3px outset $main-color;
 }

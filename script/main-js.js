@@ -1,4 +1,6 @@
 //-------------------------------project page----------------------------------
+const getS = selector => document.querySelector(selector);
+let getAll = document.querySelectorAll('.animaded-text, a, h4 ,p');
 // drag and drop
 function allowDrop(ev) {
   ev.preventDefault();
@@ -13,8 +15,21 @@ function drop(ev) {
   var data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
 }
+
+getS('#fonts').onchange = function () {
+  for (const elem of getAll) {
+    elem.style.fontFamily = this.value;
+  }
+}
+
+function fSize() {
+  for (const elem of getAll) {
+    elem.style.fontSize = event.target.value;
+  }
+}
+
+
 //-----------------------account page-----------------------
-const getS = selector => document.querySelector(selector);
 let uerInfo = [];
 
 function showModal() {

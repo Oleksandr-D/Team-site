@@ -41,24 +41,50 @@
          </aside>
          <div class="wraper-blocks">
             <article class="content-block">
-               <div class="animation-block bg">
+               <div class="animation-block bg shadows">
                   <div class="animated-circle"></div>
                   <div class="animated-circle-yellow"></div>
                   <h4 class="animaded-text">Ready for animation using only CSS</h4>
-                  <div class="pulse-container" ondrop="drop(event)" ondragover="allowDrop(event)" >
-                     <div id="drag1" ondragstart="drag(event)" draggable="true" 
-                          class="icon blue" >
-                  </div>
+                  <div class="pulse-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+                     <div id="drag1" ondragstart="drag(event)" draggable="true" class="icon blue">
+                     </div>
                      <div class="icon red"></div>
                      <div class="icon orange"></div>
                      <div class="icon green"></div>
                   </div>
                   <div class="wraper-center">
                      <div class="backgr">
-                        <div id="drop" ondrop="drop(event)" ondragover="allowDrop(event)"
-                             class="gradients">
-                         </div>
+                        <div id="drop" ondrop="drop(event)" ondragover="allowDrop(event)" class="gradients">
+                        </div>
                      </div>
+                  </div>
+               </div>
+            </article>
+            <article class="content-block">
+               <div class="settings-wraper bg shadows">
+                  <label for="fonts">Choose a font:</label>
+                  <select id="fonts" name="font">
+                     <option value="ChronicaPro">ChronicaPro</option>
+                     <option value="bahij-sultannahia">Bahij-sultannahia</option>
+                     <option value="Alegreya">Alegreya"</option>
+                     <option value="Vollkorn">Vollkorn</option>
+                     <option value="Gentium Book Basic">Gentium Book Basic</option>
+                  </select>
+                  <input type="radio" id="font-24" name="size" value="24px" onclick="fSize()">
+                  <label for="font-24">font size 24px</label>
+                  <input type="radio" id="font-34" name="size" value="34px" onclick="fSize()">
+                  <label for="font-34">font size 34px</label>
+                  <p>Please choose the background color for this page</p>
+                  <div class="wraper-center">
+                     <div class="col-box"></div>
+                     <div class="col-box"></div>
+                     <div class="col-box"></div>
+                     <div class="col-box"></div>
+                     <div class="col-box"></div>
+                     <div class="col-box"></div>
+                     <div class="col-box"></div>
+                     <div class="col-box"></div>
+                     <div class="col-box"></div>
                   </div>
                </div>
             </article>
