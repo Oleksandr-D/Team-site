@@ -17,9 +17,9 @@ function drop(ev) {
   ev.target.appendChild(document.getElementById(data));
 }
 //change font
-getS('#fonts').onchange = function () {
+function changeFont() {
   for (const elem of getAll) {
-    elem.style.fontFamily = this.value;
+    elem.style.fontFamily = event.target.value;
   }
 }
 //change font size
@@ -29,17 +29,16 @@ function fSize() {
   }
 }
 //change background Image
-function changeBg(){
-  if(event.target.className === 'box'){
+function changeBg() {
+  if (event.target.className === 'box') {
     for (const elem of getAllBg) {
       elem.style.backgroundImage = event.target.style.backgroundImage;
     }
   }
 }
 
-
 //-----------------------account page-----------------------
-let uerInfo = [];
+let userInfo = [];
 
 function showModal() {
   event.preventDefault();
@@ -50,7 +49,7 @@ function showModal() {
   user.city = formTwo.city.value;
   user.state = formTwo.state.value;
   user.postalCode = formTwo.postalCode.value;
-  uerInfo.push(user);
+  userInfo.push(user);
   formTwo.reset();
   getS('.modal-container').setAttribute('style', 'display:flex');
   //set data in text content and html
