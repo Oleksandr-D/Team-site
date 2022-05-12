@@ -671,6 +671,7 @@ input[type="button"]:hover {
   position: relative;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+  z-index: 0;
 }
 
 .animaded-text {
@@ -1088,13 +1089,26 @@ input[type="button"]:hover {
 }
 
 .settings-wraper > p {
-  margin-top: 20px;
+  margin: 20px 0px;
 }
 
-.col-box {
+.wraper-box {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+.box {
   width: 100px;
   height: 70px;
-  border: 3px outset #70a9ff;
+  border: 4px outset #70a9ff;
 }
 
 header {
@@ -1269,6 +1283,7 @@ main {
   width: 150px;
   -webkit-transition-duration: 0.7s;
           transition-duration: 0.7s;
+  z-index: -1;
 }
 
 .account:hover::after {

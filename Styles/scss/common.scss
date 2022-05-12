@@ -134,6 +134,7 @@ main {
     background-color: $main-color;
     width: 150px;
     transition-duration: 0.7s;
+    z-index: -1;
 }
 
 .account:hover::after {

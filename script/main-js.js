@@ -1,6 +1,7 @@
 //-------------------------------project page----------------------------------
 const getS = selector => document.querySelector(selector);
 let getAll = document.querySelectorAll('.animaded-text, a, h4 ,p');
+let getAllBg = document.querySelectorAll('.animation-block, .settings-wraper, body');
 // drag and drop
 function allowDrop(ev) {
   ev.preventDefault();
@@ -15,16 +16,24 @@ function drop(ev) {
   var data = ev.dataTransfer.getData("text");
   ev.target.appendChild(document.getElementById(data));
 }
-
+//change font
 getS('#fonts').onchange = function () {
   for (const elem of getAll) {
     elem.style.fontFamily = this.value;
   }
 }
-
+//change font size
 function fSize() {
   for (const elem of getAll) {
     elem.style.fontSize = event.target.value;
+  }
+}
+//change background Image
+function changeBg(){
+  if(event.target.className === 'box'){
+    for (const elem of getAllBg) {
+      elem.style.backgroundImage = event.target.style.backgroundImage;
+    }
   }
 }
 

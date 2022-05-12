@@ -473,6 +473,7 @@ input[type="button"]:hover {
    padding: 20px;
    position: relative;
    transform-style: preserve-3d;
+   z-index: 0;
 }
 
 .animaded-text {
@@ -740,10 +741,20 @@ input[type="button"]:hover {
 }
 
 .settings-wraper>p {
-   margin-top: 20px;
+   margin: 20px 0px;
 }
-.col-box{
+
+.wraper-box{
+   width: 60%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: auto;
+}
+
+.box{
    width: 100px;
    height: 70px;
-   border: 3px outset $main-color;
+   border: 4px outset $main-color;
+   
 }

@@ -41,6 +41,49 @@
          </aside>
          <div class="wraper-blocks">
             <article class="content-block">
+               <div class="settings-wraper bg shadows">
+                  <label for="fonts">Choose a font:</label>
+                  <select id="fonts" name="font">
+                     <option value="ChronicaPro">ChronicaPro</option>
+                     <option value="bahij-sultannahia">Bahij-sultannahia</option>
+                     <option value="Alegreya">Alegreya"</option>
+                     <option value="Vollkorn">Vollkorn</option>
+                     <option value="Gentium Book Basic">Gentium Book Basic</option>
+                  </select>
+                  <input type="radio" id="font-24" name="size" value="24px" onclick="fSize()">
+                  <label for="font-24">font size 24px</label>
+                  <input type="radio" id="font-34" name="size" value="34px" onclick="fSize()">
+                  <label for="font-34">font size 34px</label>
+                  <p>Please choose the background for this page</p>
+                  <div class="wraper-box" onclick="changeBg()">
+                     <div class="box" style="background-image: url('../../../Wallpapers/wallpaper2you_57779.jpg');
+                          background-size: contain;">
+                     </div>
+                     <div class="box"
+                        style="background-image: url('../../../Wallpapers/wallpaperflare.com_wallpaper.jpg');background-repeat: no-repeat; background-size: cover;">
+                     </div>
+                     <div class="box"
+                        style="background-image: url('../../../Wallpapers/andrius-stankunas-devushka-poza-nebo-zakat.jpg');background-repeat: no-repeat; background-size: contain;">
+                     </div>
+                     <div class="box" style="background-image:linear-gradient(to right,
+                          #23074d, #cc5333)"></div>
+                     <div class="box" style="background-image: linear-gradient(to top,
+                          #accbee 0%, #e7f0fd 100%)"></div>
+                     <div class="box" style="background-image: linear-gradient(to top,
+                          #a8edea 0%, #fed6e3 100%)"></div>
+                     <div class="box" style="background-image: linear-gradient(120deg,
+                          #a6c0fe 0%, #f68084 100%)"></div>
+                     <div class="box" style="background-image: radial-gradient( circle 759px at -6.7% 50%,
+                          rgba(80,131,73,1) 0%, rgba(140,209,131,1) 26.2%,
+                          rgba(178,231,170,1) 50.6%, rgba(144,213,135,1) 74.1%,
+                          rgba(75,118,69,1) 100.3% )">
+                     </div>
+                     <div class="box" style="background-image: linear-gradient(to right,
+                          #bdc3c7, #2c3e50)"></div>
+                  </div>
+               </div>
+            </article>
+            <article class="content-block">
                <div class="animation-block bg shadows">
                   <div class="animated-circle"></div>
                   <div class="animated-circle-yellow"></div>
@@ -57,34 +100,6 @@
                         <div id="drop" ondrop="drop(event)" ondragover="allowDrop(event)" class="gradients">
                         </div>
                      </div>
-                  </div>
-               </div>
-            </article>
-            <article class="content-block">
-               <div class="settings-wraper bg shadows">
-                  <label for="fonts">Choose a font:</label>
-                  <select id="fonts" name="font">
-                     <option value="ChronicaPro">ChronicaPro</option>
-                     <option value="bahij-sultannahia">Bahij-sultannahia</option>
-                     <option value="Alegreya">Alegreya"</option>
-                     <option value="Vollkorn">Vollkorn</option>
-                     <option value="Gentium Book Basic">Gentium Book Basic</option>
-                  </select>
-                  <input type="radio" id="font-24" name="size" value="24px" onclick="fSize()">
-                  <label for="font-24">font size 24px</label>
-                  <input type="radio" id="font-34" name="size" value="34px" onclick="fSize()">
-                  <label for="font-34">font size 34px</label>
-                  <p>Please choose the background color for this page</p>
-                  <div class="wraper-center">
-                     <div class="col-box"></div>
-                     <div class="col-box"></div>
-                     <div class="col-box"></div>
-                     <div class="col-box"></div>
-                     <div class="col-box"></div>
-                     <div class="col-box"></div>
-                     <div class="col-box"></div>
-                     <div class="col-box"></div>
-                     <div class="col-box"></div>
                   </div>
                </div>
             </article>
